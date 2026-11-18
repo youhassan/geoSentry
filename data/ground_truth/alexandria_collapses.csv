@@ -1,0 +1,5 @@
+incident_id,date,district,roi,street,stories,collapse_type,fatalities,lat,lon,coord_precision,source,notes
+ALX_COL_001,2023-06-26,Sidi Bishr (Al-Montazah),sidi_bishr,Khalil Hamada Street,13.0,Full Collapse,10,31.258,29.989,street_approx,Egypt Today / Egyptian Streets (June 2023),13-14 story residential building vertical split; unauthorized top floor & column removal reported.
+ALX_COL_002,2023-07-13,El-Gomrok,gomrok,El-Gomrok Old Quarter,4.0,Full/Partial Collapse,3,31.2045,29.8835,district_approx,Egypt Today (July 2023),Old residential building collapse in El-Gomrok district resulting in 3 fatalities.
+ALX_COL_003,2023-07-15,Bakos (Raml),outside_primary_roi,Bakos area,,Partial Collapse,0,31.229,29.961,district_approx,Egypt Today (July 2023),Partial residential collapse reported in Bakos.
+ALX_COL_004,2023-01-07,Alexandria (Old Quarter),outside_primary_roi,Unspecified old building,,Partial Collapse,2,31.2,29.9,city_approx,Egypt Today (Jan 2023),Old building partial collapse resulting in 2 fatalities.
