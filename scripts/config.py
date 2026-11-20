@@ -17,21 +17,31 @@ CRS_UTM_ALEXANDRIA = "EPSG:32636"  # WGS 84 / UTM Zone 36N (meters)
 
 # Regions of Interest (ROIs) in Alexandria, Egypt
 # Format: (west, south, east, north)
+# Selected for ~90-95% human-verified OpenStreetMap building footprint completeness,
+# high orthogonal geometric accuracy (median rectangularity > 0.96), and documented
+# historical structural collapses.
 ROIS = {
+    "mansheya_attarine": {
+        "name": "El-Mansheya Historic Core (Manually Digitized High-Precision)",
+        "bbox": (29.8939, 31.1961, 29.8980, 31.1998),  # Tightly wraps exact digitized bounds
+        "start_date": "2021-01-01",
+        "end_date": "2024-12-31",
+        "prefix": "MA",
+    },
+    "bacos_raml": {
+        "name": "Bacos / Fleming / Schutz Corridor (El-Raml, East Alexandria)",
+        "bbox": (29.9610, 31.2255, 29.9745, 31.2345),  # ~1.30 km^2, ~2,730 footprints
+        "start_date": "2021-01-01",
+        "end_date": "2023-12-31",
+        "prefix": "BR",
+    },
     "sidi_bishr": {
-        "name": "Sidi Bishr / Miami Corridor (Al-Montazah)",
-        "bbox": (29.985, 31.250, 30.010, 31.272),  # ~4.5 km^2
+        "name": "Sidi Bishr / Miami Corridor (Al-Montazah - Sparse ML Coverage)",
+        "bbox": (29.9850, 31.2500, 30.0100, 31.2720),  # ~4.5 km^2 (legacy ROI)
         "start_date": "2021-01-01",
         "end_date": "2023-12-31",
         "prefix": "SB",
     },
-    "gomrok": {
-        "name": "El-Gomrok / Bahary",
-        "bbox": (29.875, 31.195, 29.895, 31.215),  # ~4.2 km^2
-        "start_date": "2021-01-01",
-        "end_date": "2024-12-31",
-        "prefix": "GM",
-    },
 }
 
-DEFAULT_ROI = "sidi_bishr"
+DEFAULT_ROI = "mansheya_attarine"

@@ -35,3 +35,7 @@ Thumbs.db
 *.state
 cache/
 data/raw/*_overture_raw.geojson*
+outputs/tiles/
+
+# Local project progress log (wins & fails across all steps)
+docs/PROJECT_LOG_WINS_AND_FAILS.md
