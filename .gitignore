@@ -35,6 +35,8 @@ Thumbs.db
 *.state
 cache/
 data/raw/*_overture_raw.geojson*
+data/processed/*/hyp3_ifgs/
+data/processed/*/mintpy/
 outputs/tiles/
 
 # Local project progress log (wins & fails across all steps)
